@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(194, 255, 255);
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(3, 3, 3);
+  font-size: 40px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgb(249, 255, 255);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+  border: 1px solid #14162b;
+  padding: 8px 16px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #3398d6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #14162b;
+  color: white;
+  padding: 16px 32px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.gostos {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  flex-grow: wrap;
+}
+
+.gosto li {
+  background-color: blue;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-widht: 600px) {
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}

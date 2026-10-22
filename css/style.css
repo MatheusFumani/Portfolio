@@ -2,7 +2,7 @@ body {
   background-color: rgb(194, 255, 255);
   color: rgb(3, 3, 3);
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
   margin: 0;
 }
 
@@ -22,6 +22,13 @@ main {
   margin-bottom: 24px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 th,
@@ -75,6 +82,15 @@ img {
   max-width: 100%;
 }
 
+nav a:hover  {
+ color: blue;
+}
+
+.card:hover {
+ transform: translate(6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
 @media (max-widht: 600px) {
   header {
     flex-direction: column;
@@ -82,5 +98,8 @@ img {
   }
   h1 {
     font-size: 28px;
+  }
+  .projetos {
+    grid-template-columns: 1fr;
   }
 }
